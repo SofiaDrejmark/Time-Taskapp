@@ -1,0 +1,250 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rootNav > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(212, 220, 231);
+}
+
+.rootNav > ul > li > a > svg {
+  height: 50px;
+  width: 50px;
+}
+
+.overwiewNav > ul {
+  list-style-type: none;
+  font-size: 30px;
+  text-decoration: none;
+  padding: 15px;
+  background-color: rgb(232, 237, 241);
+}
+
+.overwiewNav > ul > li {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+.overwiewNav > ul > li > a {
+  text-decoration: none;
+}
+
+a.active {
+  color: black;
+  border-radius: 0.5px;
+  height: 53px;
+  width: 55px;
+  font-size: 32px;
+}
+
+a {
+  color: rgb(150, 150, 155);
+}
+
+.topDiv {
+  width: 100%;
+  height: 84px;
+  background-color: rgb(212, 220, 231);
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topDiv > h2 {
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+.addProjectDiv,
+.addTaskDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: whitesmoke;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.projectDone,
+.taskDone {
+  color: "rgba(0, 0, 0, 0.233)";
+  text-decoration: "line-through";
+}
+
+button {
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 25px;
+}
+/*MODAL CSS*/
+.modal {
+  z-index: 1;
+  width: 350px;
+  height: 220px;
+  background: rgba(255, 255, 255, 0.947);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  animation: animate 0.3s;
+}
+
+.modalContainer {
+  position: fixed;
+  height: 400px;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.808);
+}
+
+@keyframes animate {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.projectForm {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.addProjectButton {
+  width: 150px;
+  display: flex;
+  align-self: flex-end;
+}
+
+.projectInput {
+  background-color: rgb(217, 213, 213);
+  min-height: 50px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+.taskDiv,
+.projectDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.taskP,
+.projectP {
+  font-size: 1.5em;
+}
+
+.timerDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.startButton {
+  background-color: rgb(178, 212, 178);
+}
+
+.stopButton {
+  background-color: rgb(212, 158, 158);
+}
+
+.deleteTimeButton {
+  background-color: rgb(202, 199, 199);
+}
+
+.taskLi {
+  border-bottom: black solid 1px;
+  padding: 8px;
+}
+
+.showTime {
+  font-size: 27px;
+}
+
+.timelogUl > li {
+  background-color: antiquewhite;
+  margin: 8px;
+}
+
+input {
+  font-size: 30px;
+}
+
+.taskUl {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 40px 10px 0px 40px;
+}
+
+.taskUl > li {
+  margin: 10px;
+  border-bottom: 0.2px solid black;
+}
+
+.taskUl > li > a {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+}
+
+a:hover {
+  cursor: pointer;
+  color: rgb(3, 3, 134);
+}
+
+.singleDiv {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.singleDiv > button {
+  margin: 5px;
+}
+
+.singleDiv > h2 {
+  font-size: 30px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.backButton {
+  padding: 5px;
+  margin: 5px;
+  border: none;
+}
+
+.homeP {
+  font-size: 50px;
+  color: rgb(2, 2, 108);
+  margin-top: 80px;
+  margin-left: 30px;
+}
+
+.projectDiv > a {
+  color: black;
+}
+
+.projectDiv > a > h5 {
+  font-size: 30px;
+  font-weight: lighter;
+  margin: 30px;
+}

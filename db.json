@@ -1,0 +1,67 @@
+{
+  "projects": [
+    {
+      "project": "School",
+      "completed": true,
+      "id": 1
+    },
+    {
+      "project": "Country house",
+      "completed": false,
+      "id": 2
+    },
+    {
+      "project": "Home",
+      "completed": false,
+      "id": 3
+    }
+  ],
+  "tasks": [
+    {
+      "task": "Finish school test",
+      "projectId": 1,
+      "completed": false,
+      "id": 1
+    },
+    {
+      "task": "Look for internship",
+      "projectId": 1,
+      "completed": true,
+      "id": 2
+    },
+    {
+      "task": "Buy flowers",
+      "projectId": 2,
+      "completed": false,
+      "id": 3
+    },
+    {
+      "task": "Clean house",
+      "projectId": 2,
+      "completed": false,
+      "id": 4
+    },
+    {
+      "task": "Dust apartment",
+      "projectId": 3,
+      "completed": false,
+      "id": 5
+    }
+  ],
+  "timelogs": [
+    {
+      "start": "Mon Nov 07 2022 18:24:18 GMT+0100 (centraleuropeisk normaltid)",
+      "stop": "Mon Nov 07 2022 18:24:27 GMT+0100 (centraleuropeisk normaltid)",
+      "time": 130,
+      "taskId": 2,
+      "id": 1
+    },
+    {
+      "start": "Mon Nov 07 2022 18:30:16 GMT+0100 (centraleuropeisk normaltid)",
+      "stop": "Mon Nov 07 2022 18:30:17 GMT+0100 (centraleuropeisk normaltid)",
+      "time": 201,
+      "taskId": 4,
+      "id": 2
+    }
+  ]
+}
